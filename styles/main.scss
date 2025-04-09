@@ -1,11 +1,11 @@
-// *************************import 는 dardt에서 삭제 예정.
+// ************************* @import 는 dardt에서 삭제 예정.
 
 
 //변수들
 @forward'./constants/colors';
+@forward './constants/typography';
 
 
 @forward './base/fonts';  
 @forward './base/reset';      ///기본 reset   
 @forward './base/nomalize';   ///모든 브라우저에 동일한 css 부여 
-
