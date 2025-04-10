@@ -24,6 +24,10 @@
 * max-container-size - 1140px
 
 *********************************************************************/
+@use '../constants/breakpoints' as *;
+@use '../mixins/responsive' as *;
+
+
 $gutter: 20px;
 
 //모바일
@@ -31,7 +35,7 @@ $sm-columns:4;
 $sm-margin: 5px;
 
 //테블릿릿
-$md-breakpoint: 768px;
+// $md-breakpoint: 768px;
 $md-columns: 12;
 $md-margin: 30px;
 $md-max-container: 960px + calc($md-margin * 2); //container padding EOans
@@ -40,7 +44,7 @@ $md-max-container: 960px + calc($md-margin * 2); //container padding EOans
 
 
 //데스크톱
-$lg-breakpoint: 1200px;
+// $lg-breakpoint: 1200px;
 $lg-columns: 12;
 $lg-unit: 75px;
 $lg-max-container: calc($lg-unit + $gutter) * $lg-columns;
@@ -70,7 +74,8 @@ $lg-max-container: calc($lg-unit + $gutter) * $lg-columns;
     }
   }
 
-  @media screen and (min-width: $md-breakpoint) {
+    // @media screen and (min-width: $md-breakpoint)
+ @include responsive(T) {
     max-width: $md-max-container;
     padding:0 $md-margin;
     
@@ -83,7 +88,8 @@ $lg-max-container: calc($lg-unit + $gutter) * $lg-columns;
   }
 
 
-  @media screen and (min-width: $lg-breakpoint) {
+  // @media screen and (min-width: $lg-breakpoint)
+  @include responsive(D) {
     max-width: $lg-max-container;
     padding:0;
     
