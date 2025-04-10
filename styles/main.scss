@@ -5,7 +5,10 @@
 @forward'./constants/colors';
 @forward './constants/typography';
 
-
 @forward './base/fonts';  
 @forward './base/reset';      ///기본 reset   
 @forward './base/nomalize';   ///모든 브라우저에 동일한 css 부여 
+
+@forward './layouts/grids';
+
+

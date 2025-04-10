@@ -14,7 +14,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  html {
+  html { 
     // font-size: 62.5%;
     font-size: $font-size-16;
     padding: 0;
@@ -187,4 +187,4 @@
   .smoothed {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  } //font를 좀더 부드럽게 처리  이후에 * 로 또 사용
+  } //font를 좀더 부드럽게 처리  이후에 * 로 또 사용 (font smoothing 모질라에서 가져옴)
