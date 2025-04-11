@@ -600,6 +600,10 @@ legend, caption {
 .avatar-32, .avatar-24 {
   display: block;
   overflow: hidden;
+  background-image: url("./assets/images/img-user-default.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50%;
 }
 .avatar-32 img, .avatar-24 img {
@@ -617,6 +621,34 @@ legend, caption {
 .avatar-32 {
   width: 32px;
   height: 32px;
+}
+
+.star-rating-24, .star-rating-20, .star-rating-16, .star-rating-13 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.star-rating-24 .ico_star, .star-rating-20 .ico_star, .star-rating-16 .ico_star, .star-rating-13 .ico_star {
+  color: #E0E2E7;
+}
+.star-rating-24 .ico_star.is-active, .star-rating-20 .ico_star.is-active, .star-rating-16 .ico_star.is-active, .star-rating-13 .ico_star.is-active {
+  color: #3186C4;
+}
+
+.star-rating-13 {
+  font-size: 13px;
+}
+
+.star-rating-16 {
+  font-size: 16px;
+}
+
+.star-rating-20 {
+  font-size: 20px;
+}
+
+.star-rating-24 {
+  font-size: 24px;
 }
 
 /*<열기>*******************************************************************
