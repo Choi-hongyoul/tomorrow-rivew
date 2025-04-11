@@ -12,6 +12,9 @@
 @forward './mixins/text-style';
 @forward './mixins/responsive';
 @forward './mixins/positions';
+@forward './mixins/flexbox';
+
+@forward './modules/tags';
 
 @forward './layouts/grids';
 

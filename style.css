@@ -570,6 +570,33 @@ legend, caption {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.tag-green, .tag-gray, .tag-red {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.tag-red {
+  color: #FFFFFF;
+  background-color: #F86D7D;
+}
+
+.tag-gray {
+  color: #8C8D96;
+  background-color: #E0E2E7;
+}
+
+.tag-green {
+  color: #FFFFFF;
+  background-color: #22C58B;
+}
+
 /*<열기>*******************************************************************
 
 모바일 MOBILE : < 768px ---------------------------------------------

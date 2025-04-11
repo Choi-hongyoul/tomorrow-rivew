@@ -1,0 +1,33 @@
+@use '../mixins/flexbox' as *;
+@use '../mixins/text-style' as *;
+@use '../constants/colors' as *;
+
+
+%tag-base {
+    //placeholder
+    //공통 스타일
+    @include inline-flexbox;
+    @include text-style(12);
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 4px;
+}
+
+.tag-red {
+    @extend %tag-base;
+    color: $white;
+    background-color: $red
+}
+
+.tag-gray {
+    @extend %tag-base;
+    color: $secondary;
+    background-color: $border
+    
+}
+
+.tag-green {
+    @extend %tag-base;
+    color: $white;
+    background-color: $green
+}

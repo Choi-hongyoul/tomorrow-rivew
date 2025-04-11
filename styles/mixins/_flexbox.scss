@@ -1,0 +1,51 @@
+@use "sass:map"; //map을 사용하려면 필수 선언 !!
+
+$flex-map: (
+    start: flex-start,
+    end: flex-end,
+    between: space-between,
+    around: space-around,
+    stretch: stretch,
+    center: center,
+);
+
+@function _get-flex-value($key){
+/* 
+    flex-start -> start
+    flex-end -> end
+    space-between ->between
+    pace-around -> around
+    등 축약형으로 만들기 
+ */
+    @return map.get($flex-map, $key);
+}
+
+@mixin flexbox($js: center, $ai: center) {
+    display: flex;
+    justify-content: _get-flex-value($js);
+    align-items: _get-flex-value($ai);
+}
+
+@mixin inline-flexbox($js: center, $ai: center) {
+  display: inline-flex;
+  justify-content: _get-flex-value($js);
+  align-items: _get-flex-value($ai);
+}
+
+@mixin column-flexbox($js: center, $ai: center) {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: _get-flex-value($js);
+  align-items: _get-flex-value($ai);
+}
+
+
+
+//.list {
+//   @include flexbox(end,stretch);
+// }
+
+// .list2 {
+//   @include inline-flexbox(start,stretch);
+// }
+
