@@ -800,8 +800,8 @@ legend, caption {
   height: 55px;
 }
 
-select,
-input {
+.form-select,
+.form-input {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.001em;
@@ -814,19 +814,58 @@ input {
   background-color: #FFFFFF;
   padding: 0 16px;
   appearance: none;
+  transition: background-color 200ms ease-in-out;
 }
-select::placeholder,
-input::placeholder {
+.form-select::placeholder,
+.form-input::placeholder {
   color: #B2B3B9;
 }
-select:not(:disabled):hover,
-input:not(:disabled):hover {
+.form-select:not(:disabled):hover,
+.form-input:not(:disabled):hover {
   background-color: #F7F8FA;
 }
-select:disabled,
-input:disabled {
+.form-select:disabled,
+.form-input:disabled {
   cursor: not-allowed;
   opacity: 0.4;
+}
+
+.select-group {
+  position: relative;
+}
+.select-group.is-active .form-select {
+  border-color: #3186C4;
+}
+.select-group.is-active .ico_caret {
+  color: #3186C4;
+}
+.select-group .form-select {
+  padding-right: 40px;
+  text-overflow: ellipsis;
+}
+.select-group .ico_caret {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+  text-size: 24px;
+  color: #B2B3B9;
+  pointer-events: none;
+}
+
+.input-group {
+  position: relative;
+}
+.input-group .form-input {
+  padding-left: 40px;
+}
+.input-group .ico_search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-size: 20px;
+  color: #8C8D96;
 }
 
 /*<열기>*******************************************************************
