@@ -722,6 +722,84 @@ legend, caption {
   font-weight: 400;
 }
 
+.btn-ghost, .btn-outlined, .btn-secondary, .btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.btn-ghost:disabled, .btn-outlined:disabled, .btn-secondary:disabled, .btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  background-color: #3186C4;
+  transition: background-color 200ms ease-in-out;
+}
+.btn-primary:not(:disabled):hover {
+  background-color: #3DA5F5;
+}
+
+.btn-secondary {
+  color: #3F4150;
+  background-color: #E0E2E7;
+  transition: background-color 200ms ease-in-out;
+}
+.btn-secondary:not(:disabled):hover {
+  background-color: #8C8D96;
+}
+
+.btn-outlined {
+  color: #3186C4;
+  background-color: #FFFFFF;
+  border: 1px solid #3186C4;
+  transition: background-color 200ms ease-in-out;
+}
+.btn-outlined:not(:disabled):hover {
+  background-color: #ECF6FE;
+}
+
+.btn-ghost {
+  color: #3F4150;
+  background-color: transparent;
+  transition: color 200ms ease-in-out;
+}
+.btn-ghost:not(:disabled):hover {
+  color: #8C8D96;
+}
+
+.btn-32 {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.001em;
+  height: 32px;
+}
+
+.btn-40 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.001em;
+  height: 40px;
+}
+
+.btn-48 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.001em;
+  height: 48px;
+}
+
+.btn-55 {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.002em;
+  height: 55px;
+}
+
 /*<열기>*******************************************************************
 
 모바일 MOBILE : < 768px ---------------------------------------------
