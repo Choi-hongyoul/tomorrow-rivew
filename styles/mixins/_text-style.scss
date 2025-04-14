@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 @use '../constants/colors' as *;
 @use '../constants/typography' as *;
 
@@ -83,7 +85,7 @@
   }
 
 
-  @if $color and (type-of($color) == color) {
+  @if $color and (meta.type-of($color) == color) {
     color: $color;
   }
 
