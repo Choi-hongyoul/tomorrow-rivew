@@ -1,0 +1,69 @@
+//screen reader;
+@use '../constants/breakpoints' as *;
+@use '../mixins/responsive' as *;
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border:0;
+}
+
+//반응형 관련.
+
+/*
+| Mobile    | Tablet     | Desktop   | class             |
+| ------    | ------     | -------   | ----------------- |
+| O         | X          | X         |    `.sm-only`     |
+| O         | O          | X         |    `.lg-hidden`   |
+| X         | O          | X         |    `.md-only`     |
+| X         | O          | O         |    `.sm-hidden`   |
+| X         | X          | O         |    `.lg-only`     |
+| O         | X          | O         |    `.md-hidden`   |
+
+*/
+
+.sm-only {
+    @include responsive(T) {
+        display: none;
+    }
+}
+
+.md-only {
+    @media screen and (max-width: $md-breakpoint - 1){
+        display: none;
+    }
+    @include responsive(D){
+    display: none;
+   }
+}
+
+.lg-only {
+    @media screen and (max-width: $lg-breakpoint - 1){
+        display: none;
+    }
+}
+
+
+.sm-hidden {
+    @media screen and (max-width: $md-breakpoint - 1){
+        display: none;
+    }
+}
+
+.md-hidden {
+    @media screen and (min-width: $md-breakpoint) and (max-width: $lg-breakpoint - 1) {
+        display: none;
+    }
+}
+
+.lg-hidden {
+    @include responsive(D){
+        display: none;
+    }
+}

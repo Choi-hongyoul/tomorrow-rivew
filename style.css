@@ -570,6 +570,70 @@ legend, caption {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+| Mobile    | Tablet     | Desktop   | class             |
+| ------    | ------     | -------   | ----------------- |
+| O         | X          | X         |    `.sm-only`     |
+| O         | O          | X         |    `.lg-hidden`   |
+| X         | O          | X         |    `.md-only`     |
+| X         | O          | O         |    `.sm-hidden`   |
+| X         | X          | O         |    `.lg-only`     |
+| O         | X          | O         |    `.md-hidden`   |
+
+*/
+@media screen and (min-width: 768px) {
+  .sm-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .md-only {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .md-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .lg-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sm-hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .md-hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lg-hidden {
+    display: none;
+  }
+}
+
 .tag-green, .tag-gray, .tag-red {
   display: inline-flex;
   justify-content: center;
