@@ -651,6 +651,77 @@ legend, caption {
   font-size: 24px;
 }
 
+.price-off, .price-16,
+.price-20,
+.price-32 {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.price-off .amount, .price-16 .amount,
+.price-20 .amount,
+.price-32 .amount {
+  font-family: "Tahoma", sans-serif;
+  line-height: 1;
+}
+.price-off .currency, .price-16 .currency,
+.price-20 .currency,
+.price-32 .currency {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.price-16,
+.price-20,
+.price-32 {
+  color: #191A20;
+}
+.price-16 .amount,
+.price-20 .amount,
+.price-32 .amount {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.price-16 .currency,
+.price-20 .currency,
+.price-32 .currency {
+  font-weight: 700;
+}
+
+.price-16 .amount {
+  font-size: 16px;
+}
+.price-16 .currency {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.001em;
+}
+
+.price-32 .amount {
+  font-size: 32px;
+}
+.price-32 .currency {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+.price-off {
+  color: #8C8D96;
+}
+.price-off .amount {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-decoration: line-through;
+}
+.price-off .currency {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.001em;
+  font-weight: 400;
+}
+
 /*<열기>*******************************************************************
 
 모바일 MOBILE : < 768px ---------------------------------------------
