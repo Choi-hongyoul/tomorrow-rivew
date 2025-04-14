@@ -868,6 +868,77 @@ legend, caption {
   color: #8C8D96;
 }
 
+.pagenation .page-item a,
+.pagenation .page-item button, .pagenation .page-control {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.001em;
+  height: 26px;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.pagenation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagenation .page-control {
+  width: 26px;
+  border: 1px solid #E0E2E7;
+}
+.pagenation .page-control.page-prev {
+  margin-right: 24px;
+}
+.pagenation .page-control.page-prev .ico_chevron {
+  transform: rotate(90deg);
+}
+.pagenation .page-control.page-next {
+  margin-left: 24px;
+}
+.pagenation .page-control.page-next .ico_chevron {
+  transform: rotate(-90deg);
+}
+.pagenation .page-control:hover {
+  opacity: 0.4;
+}
+.pagenation .page-control .ico_chevron {
+  font-size: 20px;
+}
+.pagenation .page-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagenation .page-item {
+  margin-right: 4px;
+}
+.pagenation .page-item.is-active a,
+.pagenation .page-item.is-active button {
+  color: #FFFFFF;
+  background-color: #3186C4;
+}
+.pagenation .page-item.is-active a:hover,
+.pagenation .page-item.is-active button:hover {
+  color: #FFFFFF;
+}
+.pagenation .page-item:last-child {
+  margin-right: 0;
+}
+.pagenation .page-item a,
+.pagenation .page-item button {
+  min-width: 26px;
+  padding: 0 4px;
+}
+.pagenation .page-item a:hover,
+.pagenation .page-item button:hover {
+  color: #3186C4;
+}
+
 /*<열기>*******************************************************************
 
 모바일 MOBILE : < 768px ---------------------------------------------
