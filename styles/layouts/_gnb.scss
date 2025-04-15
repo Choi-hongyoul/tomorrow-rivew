@@ -1,3 +1,4 @@
+@use '../mixins/responsive' as *;
 @use '../mixins/positions' as *;
 @use '../mixins/flexbox' as *;
 @use '../constants/colors' as *;
@@ -46,6 +47,56 @@
 
     &-menu-button {
         color: $blue;
+    }
+
+
+    @include responsive(T){
+        
+        &-wrapper{
+            height: 80px;
+        }
+
+        &-left {
+            @include flexbox(start);
+        }
+
+        &-right {
+            @include flexbox(end);
+
+            .button-group {
+                margin-right: 24px;
+
+                .gnb-icon-button {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        .logo {
+            position: static;  //logo위치 초기화
+            transform: none; //기존 logo css 초기화
+            margin-right: 32px;
+
+            img{
+                height: 24px;
+            }
+        }
+
+        .btn-primary {
+            width: 88px;
+            i{
+                margin-left: 4px;
+            }
+        }
+    }
+
+    @include responsive(D){
+        &-right{
+            .input-group{
+                width: 264px;
+                margin-right: 24px;
+            }
+        }
     }
 }
 

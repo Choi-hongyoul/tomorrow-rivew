@@ -1002,6 +1002,24 @@ i {
   content: "\e90f";
 }
 
+.gnb-nav-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gnb-nav-item {
+  margin-right: 24px;
+}
+.gnb-nav-item:last-child {
+  margin-right: 0;
+}
+.gnb-nav-item a {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.002em;
+  color: #3F4150;
+}
+
 /*<열기>*******************************************************************
 
 모바일 MOBILE : < 768px ---------------------------------------------
@@ -1180,6 +1198,47 @@ i {
 }
 .gnb-menu-button {
   color: #3186C4;
+}
+@media screen and (min-width: 768px) {
+  .gnb-wrapper {
+    height: 80px;
+  }
+  .gnb-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .gnb-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .gnb-right .button-group {
+    margin-right: 24px;
+  }
+  .gnb-right .button-group .gnb-icon-button {
+    margin-right: 8px;
+  }
+  .gnb .logo {
+    position: static;
+    transform: none;
+    margin-right: 32px;
+  }
+  .gnb .logo img {
+    height: 24px;
+  }
+  .gnb .btn-primary {
+    width: 88px;
+  }
+  .gnb .btn-primary i {
+    margin-left: 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gnb-right .input-group {
+    width: 264px;
+    margin-right: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

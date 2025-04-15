@@ -1,0 +1,19 @@
+@use '../mixins/responsive' as *;
+@use '../mixins/flexbox' as *;
+@use '../mixins/text-style' as *;
+@use '../constants/colors' as*;
+.gnb-nav {
+    &-list{
+        @include flexbox(start);
+    }
+    &-item {
+        margin-right: 24px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+        a{
+            @include text-style(18, $primary);
+        }
+    }
+}
