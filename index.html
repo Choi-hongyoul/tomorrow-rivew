@@ -17,7 +17,70 @@
     <link rel="manifest" href="./site.webmanifest" />
 </head>
 <body>
+  <!--반응형작업시 모바일부터 작업하는걸 추천 -->
 
+  <header class="gnb">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-12 col-lg-12"> <!--col-sm-4 ,col-md-12,col-lg-12  셋다 width100% 나옴 하나 만 적어줘도됨. -->
+          <div class="gnb-left">
+            <h1 class="logo">
+              <a href="/">
+                <img src="./assets/icons/Logo.svg" alt="내일의집">
+              </a>
+            </h1>
+            <nav class="sm-hidden">
+              <h2 class="visually-hidden">메뉴</h2>
+              <ul  class="gnb-nav-list">
+                <li class="gnb-nav-item"><a href="/">커뮤니티</a></li>
+                <li class="gnb-nav-item"><a href="/"></a>스토어</li>
+                <li class="gnb-nav-item"><a href="/"></a>인테리어시공</li>
+              </ul>
+            </nav>
+
+            <button class="sm-only gnb-icon-button" type="button" aria-label="메뉴열기버튼" >
+              <i class="ico_menu" ></i>
+            </button>
+          </div>
+
+          <div class="gnb-right">
+            <div class="input-group" class="lg-only">
+              <i class="ico_search" aria-hidden></i>
+              <input type="text" class="form-input" placeholder="스토어검색">
+            </div>
+
+            <div class="button-group">
+              <button class="lg-hidden gnb-icon-button" type="button" aria-label="검색창열기버튼">
+                <i class="ico_search" ></i>
+              </button>
+  
+              <a class="sm-hidden gnb-icon-button" href="/" aria-label="스크랩북 페이지 이동">
+                <i class="ico_bookmark"></i>
+                </a>
+          
+                <a class="sm-hidden gnb-icon-button" href="/" aria-label="내소식 페이지 이동">
+                  <i class="ico_bell"></i>
+                  </a>
+          
+              <a class="gnb-icon-button" href="/" aria-label="장바구니 페이지 이동">
+              <i class="ico_cart"></i>
+              </a>
+
+              <button class="sm-hidden gnb-avatar-button" type="button" aria-label="마이메뉴 열기 버튼">
+                <div class="avatar-32">
+                  <img src="./assets/images/img-user-01.jpg" alt="사딸라아저씨">
+                </div>
+              </button>
+            </div>
+
+            <button class="sm-hidden btn-primary btn-40" type="button" aria-hidden>글쓰기
+              <i class="ico_chevron"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   
 
 
