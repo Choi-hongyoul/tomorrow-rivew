@@ -493,15 +493,15 @@ legend, caption {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 /*
@@ -517,42 +517,42 @@ legend, caption {
 */
 @media screen and (min-width: 768px) {
   .sm-only {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 767px) {
   .md-only {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .md-only {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .lg-only {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 767px) {
   .sm-hidden {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .md-hidden {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .lg-hidden {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1135,6 +1135,51 @@ i {
   .container .col-lg-12 {
     width: 1140px;
   }
+}
+
+.gnb {
+  position: relative;
+  border-bottom: 1px solid #E0E2E7;
+}
+.gnb-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.gnb-right .button-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.gnb-right .gnb-search-button {
+  margin-right: 4px;
+}
+.gnb .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gnb .logo a {
+  display: block;
+}
+.gnb .logo img {
+  display: block;
+  width: auto;
+  height: 20px;
+}
+.gnb-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #8C8D96;
+}
+.gnb-menu-button {
+  color: #3186C4;
 }
 
 /*# sourceMappingURL=style.css.map */
