@@ -1,6 +1,7 @@
 @use '../mixins/responsive' as *;
 @use '../mixins/positions' as *;
 @use '../mixins/flexbox' as *;
+@use '../mixins/text-style' as *;
 @use '../constants/colors' as *;
 
 .gnb {
@@ -58,9 +59,28 @@
                 margin-right: 24px;
 
                 .gnb-icon-button {
-                    margin-right: 8px;
+                    margin-right: 12px;
+                }
+
+                .gnb-auth {
+                    margin-left: 8px;
+                    
+                    a {
+                        @include text-style(14, $secondary);
+                        font-weight: 700;
+    
+                        &:first-child {
+                            margin-right: 8px;
+                        }
+    
+                        &:hover{
+                            color: $blue;
+                        }
+                    }
                 }
             }
+
+
         }
 
         .logo {
