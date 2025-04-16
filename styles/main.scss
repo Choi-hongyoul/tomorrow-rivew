@@ -1,4 +1,4 @@
-// ************************* @import 는 dardt에서 삭제 예정.
+// ************************* @import 는 dart에서 삭제 예정.
 
 //변수들
 @forward './constants/colors';
@@ -26,6 +26,7 @@
 
 @forward './components/gnb-nav';
 @forward './components/gnb-icon-buttons';
+@forward './components/my-menu';
 
 @forward './layouts/grids';
 @forward './layouts/gnb';
