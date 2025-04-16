@@ -1008,7 +1008,10 @@ i {
   align-items: center;
 }
 .gnb-nav-item {
-  margin-right: 24px;
+  margin-right: 8px;
+}
+.gnb-nav-item.is-active a, .gnb-nav-item:hover a {
+  color: #3186C4;
 }
 .gnb-nav-item:last-child {
   margin-right: 0;
@@ -1018,6 +1021,8 @@ i {
   line-height: 28px;
   letter-spacing: -0.002em;
   color: #3F4150;
+  display: block;
+  padding: 8px;
 }
 
 .gnb-icon-button {

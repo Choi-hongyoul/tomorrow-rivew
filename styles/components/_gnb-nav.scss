@@ -2,18 +2,36 @@
 @use '../mixins/flexbox' as *;
 @use '../mixins/text-style' as *;
 @use '../constants/colors' as*;
+
+//gnb.scss에서 옮김김
+
 .gnb-nav {
-    &-list{
+    $padding:8px;
+
+    &-list {
         @include flexbox(start);
     }
-    &-item {
-        margin-right: 24px;
 
-        &:last-child{
+    &-item {
+        margin-right: calc(24px - ($padding * 2));
+        
+        &.is-active,
+            &:hover {
+
+                a{
+                    color: $blue;    
+                }
+            }
+         
+        &:last-child {
             margin-right: 0;
         }
-        a{
+
+        a {
             @include text-style(18, $primary);
+            display: block;
+            padding: $padding;
+            // background-color: red;
         }
     }
 }
