@@ -1020,6 +1020,26 @@ i {
   color: #3F4150;
 }
 
+.gnb-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #8C8D96;
+  transition: color 200ms ease-in-out;
+}
+.gnb-icon-button.is-menu {
+  color: #3186C4;
+}
+.gnb-icon-button.is-menu:active {
+  color: #3DA5F5;
+}
+.gnb-icon-button:active {
+  color: #3F4150;
+}
+
 /*<열기>*******************************************************************
 
 모바일 MOBILE : < 768px ---------------------------------------------
@@ -1170,7 +1190,7 @@ i {
   justify-content: flex-end;
   align-items: center;
 }
-.gnb-right .gnb-search-button {
+.gnb-right .gnb-search-button.is-search {
   margin-right: 4px;
 }
 .gnb .logo {
@@ -1186,15 +1206,6 @@ i {
   display: block;
   width: auto;
   height: 20px;
-}
-.gnb-icon-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  font-size: 24px;
-  color: #8C8D96;
 }
 .gnb-menu-button {
   color: #3186C4;

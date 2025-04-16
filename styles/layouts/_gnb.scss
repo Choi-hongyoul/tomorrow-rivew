@@ -17,7 +17,7 @@
             @include flexbox(end);
         }
 
-        .gnb-search-button {
+        .gnb-search-button.is-search {
             margin-right: 4px;
         }
     }
@@ -36,20 +36,11 @@
         }
     }
 
-    &-icon-button {
-        @include flexbox;
-        width: 32px;
-        height: 32px;
-        font-size: 24px;
-        color: $secondary;
-    
-    }
-
     &-menu-button {
         color: $blue;
     }
 
-
+    //테블릿릿
     @include responsive(T){
         
         &-wrapper{
@@ -72,6 +63,7 @@
             }
         }
 
+
         .logo {
             position: static;  //logo위치 초기화
             transform: none; //기존 logo css 초기화
@@ -90,6 +82,7 @@
         }
     }
 
+    //데스크탑 웹웹웹웹~
     @include responsive(D){
         &-right{
             .input-group{
