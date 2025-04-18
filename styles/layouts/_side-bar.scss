@@ -2,6 +2,11 @@
 @use '../mixins/flexbox' as *;
 @use '../mixins/text-style' as *;
 
+
+body {
+    background-color: black;
+}
+
 .sidebar {
     width: 240px;
     display: block;
@@ -43,7 +48,6 @@
         }
         
         .avatar-24 {
-
             margin-right: 8px;
             flex-shrink: 0;
             flex-grow: 0;

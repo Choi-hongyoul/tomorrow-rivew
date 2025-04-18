@@ -1165,6 +1165,82 @@ i {
   background-color: #F7F8FA;
 }
 
+.drawer-menu.is-active .drawer-menu-button {
+  color: #3186C4;
+}
+.drawer-menu.is-open .drawer-menu-button .ico_chevron {
+  transform: translateY(-50%) rotate(180deg);
+}
+.drawer-menu.is-open.is-store .drawer-menu-content {
+  max-height: 332px;
+}
+.drawer-menu.is-open.is-community .drawer-menu-content {
+  max-height: 296px;
+}
+.drawer-menu.is-open.is-expert .drawer-menu-content {
+  max-height: 80px;
+}
+.drawer-menu.is-open .drawer-menu-list {
+  padding-bottom: 8px;
+}
+.drawer-menu-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.002em;
+  color: #3F4150;
+  position: relative;
+  font-weight: 700;
+  width: 100%;
+  height: 54px;
+  padding: 0 8px;
+}
+.drawer-menu-button i:first-child {
+  position: relative;
+  top: 1px;
+  font-size: 24px;
+  color: #3F4150;
+  margin-right: 8px;
+}
+.drawer-menu-button i:last-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+  font-size: 16px;
+  color: #3F4150;
+  transition: transform 200ms ease-in-out;
+}
+.drawer-menu-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease-in-out;
+}
+.drawer-menu-item.is-active a {
+  color: #3186C4;
+}
+.drawer-menu-item a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.001em;
+  color: #3F4150;
+  font-weight: 700;
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+  transition: color 200ms ease-in-out;
+}
+.drawer-menu-item a .ico_new {
+  top: 1px;
+  font-size: 16px;
+  color: red;
+}
+
 /*<열기>*******************************************************************
 
 모바일 MOBILE : < 768px ---------------------------------------------
@@ -1391,6 +1467,10 @@ i {
     width: 264px;
     margin-right: 24px;
   }
+}
+
+body {
+  background-color: black;
 }
 
 .sidebar {
