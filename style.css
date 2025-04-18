@@ -1481,6 +1481,11 @@ i {
   background-color: #FFFFFF;
   z-index: 20;
   overscroll-behavior: contain;
+  transform: translate3d(-240px, 0, 0);
+  transition: transform 300ms ease-in-out;
+}
+.sidebar.is-active {
+  transform: translate3d(0, 0, 0);
 }
 .sidebar-header {
   padding: 0 12px;
@@ -1570,6 +1575,13 @@ i {
   top: 0;
   left: 0;
   z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+.overlay.is-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

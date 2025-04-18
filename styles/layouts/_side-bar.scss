@@ -9,10 +9,11 @@
 // }
 
 .sidebar {
+    $sidebar-width:240px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 240px;
+    width: $sidebar-width;
     height: 100vh;
     overflow-y: auto;
     display: block;
@@ -20,7 +21,14 @@
     background-color: $white;
     z-index: $sidebar-level;
     overscroll-behavior: contain; //스크롤이 뒤화면에 영향주지않도록록
+    transform: translate3d(-#{$sidebar-width},0,0); //숨김
+    transition: transform 300ms ease-in-out;
 
+
+    &.is-active {
+        transform: translate3d(0,0,0);
+
+    }
     &-header{
         padding: 0 12px;
 
