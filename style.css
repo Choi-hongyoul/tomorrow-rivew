@@ -1537,5 +1537,23 @@ body {
 .sidebar-nav .drawer-menu.is-expert {
   border-bottom: 1px solid #E0E2E7;
 }
+.sidebar-user-menu {
+  margin-top: 16px;
+}
+.sidebar-user-menu .user-menu-item a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.001em;
+  color: #3F4150;
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+}
+.sidebar-user-menu .user-menu-item a:active {
+  color: #3186C4;
+}
 
 /*# sourceMappingURL=style.css.map */
