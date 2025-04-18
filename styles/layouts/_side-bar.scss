@@ -1,0 +1,69 @@
+@use '../constants/colors' as  *;
+@use '../mixins/flexbox' as *;
+@use '../mixins/text-style' as *;
+
+.sidebar {
+    width: 240px;
+    display: block;
+    padding: 32px 20px;
+    background-color: $white;
+
+    &-header{
+        padding: 0 12px;
+
+        .logo {
+            @include flexbox(start);
+           
+            a{
+                display: block;
+            }
+
+            img{
+                display: block;
+                width: auto;
+                height: 20px;
+            }
+        }
+    }
+
+    &-user,
+    &-auth {
+        @include flexbox(start);
+        height: 88px;
+    }
+
+    &-user {
+        // padding: 32px 0;
+        
+        a {
+            @include flexbox(start);
+            @include text-style(14, $primary);
+            width: 100%;
+            font-weight: 700;
+        }
+        
+        .avatar-24 {
+
+            margin-right: 8px;
+            flex-shrink: 0;
+            flex-grow: 0;
+
+        }
+        .username {
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
+    }
+
+    &-auth{
+        @include flexbox(between);
+        // padding: 24px;
+
+        a {
+            width: 84px;
+        }
+    }
+}

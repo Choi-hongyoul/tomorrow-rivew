@@ -4,6 +4,7 @@
 @forward './constants/colors';
 @forward './constants/typography';
 @forward './constants/breakpoints';
+@forward './constants/box-shadows';
 
 @forward './base/fonts';  
 @forward './base/nomalize';   ///모든 브라우저에 동일한 css 부여 
@@ -30,4 +31,5 @@
 
 @forward './layouts/grids';
 @forward './layouts/gnb';
+@forward './layouts/side-bar';
 
