@@ -1,17 +1,25 @@
 @use '../constants/colors' as  *;
+@use '../constants/indexes.scss' as  *;
 @use '../mixins/flexbox' as *;
 @use '../mixins/text-style' as *;
 
 
-body {
-    background-color: black;
-}
+// body {
+//     background-color: black;
+// }
 
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 240px;
+    height: 100vh;
+    overflow-y: auto;
     display: block;
     padding: 32px 20px;
     background-color: $white;
+    z-index: $sidebar-level;
+    overscroll-behavior: contain; //스크롤이 뒤화면에 영향주지않도록록
 
     &-header{
         padding: 0 12px;
@@ -103,4 +111,12 @@ body {
             }
         }
     }
+
+
+    //생성된 스크롤바 삭제 (가상요소사용)
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    
 }
