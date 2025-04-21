@@ -1,8 +1,6 @@
+@use '../mixins/flexbox' as *;
 @use '../constants/colors' as *;
 @use '../constants/indexes.scss' as *;
-
-@use '../mixins/positions' as *;
-@use '../mixins/flexbox' as *;
 
 
 .search-modal {
@@ -14,6 +12,10 @@
     height: 100vh;
     padding: 12px 0 ;
     background-color: $white;
+
+    &-header {
+        margin-bottom: 20px;
+    }
 
     &-form {
         @include flexbox(between);
