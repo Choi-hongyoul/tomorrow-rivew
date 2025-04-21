@@ -1,0 +1,51 @@
+@use '../mixins/responsive' as *;
+@use '../mixins/positions' as *;
+@use '../mixins/flexbox' as *;
+@use '../mixins/text-style' as *;
+@use '../constants/colors' as *;
+@use '../constants/box-shadows' as *;
+
+
+
+.lnb {
+
+    overflow-x:auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    &-list {
+        // 
+        @include inline-flexbox(start);
+        //width: max-content;//자신을 갖을수있는데 최대 넓이 (넓이를 지정하지않고 써야함)
+        white-space: nowrap;
+        position: relative;
+        left: -8px;
+    }
+    
+    &-item {
+        // flex-shrink: 0;
+
+        &.is-active {
+
+            a {
+                color: $blue;
+                border-bottom: 2px solid $blue;
+            }
+        }
+
+        a {
+            @include inline-flexbox;
+            @include text-style(13, $dark);
+            height: 40px;
+            padding: 0 8px;
+            font-weight: 700;
+        }
+
+        .ico_new {
+            color: $red;
+        }
+    }
+}

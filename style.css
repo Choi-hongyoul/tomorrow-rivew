@@ -1702,4 +1702,38 @@ i {
   margin-left: 8px;
 }
 
+.lnb {
+  overflow-x: auto;
+}
+.lnb::-webkit-scrollbar {
+  display: none;
+}
+.lnb-list {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+  left: -8px;
+}
+.lnb-item.is-active a {
+  color: #3186C4;
+  border-bottom: 2px solid #3186C4;
+}
+.lnb-item a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.001em;
+  color: #191A20;
+  height: 40px;
+  padding: 0 8px;
+  font-weight: 700;
+}
+.lnb-item .ico_new {
+  color: #F86D7D;
+}
+
 /*# sourceMappingURL=style.css.map */
