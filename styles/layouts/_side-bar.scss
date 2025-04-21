@@ -2,6 +2,7 @@
 @use '../constants/indexes.scss' as  *;
 @use '../mixins/flexbox' as *;
 @use '../mixins/text-style' as *;
+@use '../mixins/scrollbar' as *;
 
 
 // body {
@@ -34,7 +35,7 @@
 
         .logo {
             @include flexbox(start);
-           
+
             a{
                 display: block;
             }
@@ -122,9 +123,7 @@
 
 
     //생성된 스크롤바 삭제 (가상요소사용)
-    &::-webkit-scrollbar {
-        display: none;
-    }
+@include no-scrollbar;
 
     
 }

@@ -1,28 +1,31 @@
-// @use '../mixins/responsive' as *;
-// @use '../mixins/positions' as *;
 @use '../mixins/flexbox' as *;
 @use '../mixins/text-style' as *;
 @use '../constants/colors' as *;
-// @use '../constants/box-shadows' as *;
+@use '../layouts/grids' as *;
+@use '../mixins/scrollbar' as *;
+
 
 
 
 .lnb {
+    $lnb-link-padding: 8px;
+    $grid-margin: $sm-margin + ($gutter / 2)  ;
 
+    @include no-scrollbar;
     overflow-x:auto;
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
 
 
     &-list {
-        // 
+        border-bottom: 1px solid $border;
+        height: 40px;
         @include inline-flexbox(start);
         //width: max-content;//자신을 갖을수있는데 최대 넓이 (넓이를 지정하지않고 써야함)
         white-space: nowrap;
-        position: relative;
-        left: -8px;
+        // position: relative;
+        // left: -8px;
+        margin-left: -#{$grid-margin};
+        padding: 0 #{$grid-margin - $lnb-link-padding};
     }
     
     &-item {
@@ -40,12 +43,13 @@
             @include inline-flexbox;
             @include text-style(13, $dark);
             height: 40px;
-            padding: 0 8px;
+            padding: 0 $lnb-link-padding;
             font-weight: 700;
+            border-bottom: 2px solid transparent; //active 때 높이차이 정렬
         }
 
-        .ico_new {
-            color: $red;
-        }
+        // .ico_new {
+        //     color: $red;
+        // }
     }
 }

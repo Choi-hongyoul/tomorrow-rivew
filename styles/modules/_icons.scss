@@ -1,5 +1,7 @@
 
-    i {
+   @use '../constants/colors' as *;
+   
+   i {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'tomorrowfonts' !important;
     speak: never;
@@ -65,6 +67,7 @@
 
   .ico_new:before {
     content: "\e90c";
+    color: $red;
   }
 
   .ico_search:before {

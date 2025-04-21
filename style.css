@@ -988,6 +988,7 @@ i {
 
 .ico_new:before {
   content: "\e90c";
+  color: #F86D7D;
 }
 
 .ico_search:before {
@@ -1238,7 +1239,6 @@ i {
 .drawer-menu-item a .ico_new {
   top: 1px;
   font-size: 16px;
-  color: red;
 }
 
 .search-history-header {
@@ -1649,7 +1649,7 @@ i {
   color: #3186C4;
 }
 .sidebar::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 
 .overlay {
@@ -1706,15 +1706,17 @@ i {
   overflow-x: auto;
 }
 .lnb::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 .lnb-list {
+  border-bottom: 1px solid #E0E2E7;
+  height: 40px;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   white-space: nowrap;
-  position: relative;
-  left: -8px;
+  margin-left: -15px;
+  padding: 0 7px;
 }
 .lnb-item.is-active a {
   color: #3186C4;
@@ -1731,9 +1733,7 @@ i {
   height: 40px;
   padding: 0 8px;
   font-weight: 700;
-}
-.lnb-item .ico_new {
-  color: #F86D7D;
+  border-bottom: 2px solid transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
