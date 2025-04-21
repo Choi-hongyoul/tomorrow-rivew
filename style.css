@@ -1656,6 +1656,11 @@ i {
   height: 100vh;
   padding: 12px 0;
   background-color: #FFFFFF;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms ease-in-out;
+}
+.search-modal.is-active {
+  transform: translate3d(0, 0, 0);
 }
 .search-modal-header {
   margin-bottom: 20px;
