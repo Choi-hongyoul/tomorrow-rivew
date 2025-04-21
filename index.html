@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +24,14 @@
       <div class="row">
         <div class="col-sm-4 col-md-12 col-lg-12"> <!--col-sm-4 ,col-md-12,col-lg-12  셋다 width100% 나옴 하나 만 적어줘도됨. -->
           <div class="gnb-wrapper">
+
             <div class="gnb-left">
               <h1 class="logo">
                 <a href="/">
                   <img src="./assets/icons/Logo.svg" alt="내일의집">
                 </a>
               </h1>
-  
+
               <nav class="sm-hidden">
                 <h2 class="visually-hidden">메뉴</h2>
                 <ul  class="gnb-nav-list">
@@ -46,12 +47,42 @@
             </div> <!--gnb-left-->
   
             <div class="gnb-right">
-              <div  class="lg-only">
-                <div class="input-group">
-                  <i class="ico_search" aria-hidden></i>
-                  <input type="text" class="form-input" placeholder="스토어검색">
-                </div>
+              <div class="lg-only gnb-search">
+                  <div class="input-group">
+                    <i class="ico_search" aria-hidden></i>
+                    <input type="text" class="form-input" placeholder="스토어검색">
+                  </div>
+
+  
+                <section class="search-history"><!-- is-active-->
+                  <header class="search-history-header">
+                    <h2 class="title">최근 검색어</h2>
+                    <button type="button">전체 삭제</button>  
+                  </header>
+            
+            <!-------------------------- NOTE: 최근 검색어가 존재할 경우 -->
+                  <div class="search-history-content">
+                  <ol class="search-history-list">
+                    <li class="search-history-item">
+                      <button class="word-button" type="button">상품1</button><button class="del-button" type="button">
+                        <i class="ico_close" aria-label="검색어 삭제"></i>
+                      </button>
+                    </li>
+                    <li class="search-history-item">
+                      <button class="word-button" type="button">상품2</button><button class="del-button" type="button">
+                        <i class="ico_close" aria-label="검색어 삭제"></i>
+                      </button>
+                    </li>
+                    <li class="search-history-item">
+                      <button class="word-button" type="button">상품3</button><button class="del-button" type="button">
+                        <i class="ico_close" aria-label="검색어 삭제"></i>
+                      </button>
+                    </li>
+                  </ol>
+                  </div>
+                </section>
               </div>
+
 
 <!-------------------------- NOTE: Log-in State -->
 
@@ -73,14 +104,14 @@
                   <strong class="badge">5</strong>
                 </a>
 
-                <div class="sm-hidden my-menu">
+                <div class="sm-hidden my-menu"> <!--is-active-->
                   <button class="my-menu-button" type="button" aria-label="마이메뉴 열기 버튼">
                     <div class="avatar-32">
                       <img src="./assets/images/img-user-01.jpg" alt="사딸라아저씨">
                     </div>
                   </button>
 
-                  <div class="my-menu-content">
+                  <div class="my-menu-content"> 
                     <ul class="my-menu-list">
                       <li class="my-menu-item"><a href="/">마이페이지</a></li>
                       <li class="my-menu-item"><a href="/">나의 쇼핑</a></li>
@@ -119,8 +150,7 @@
   
 
 
-  <!-- 사이드바 -->
-  
+  <!-- 사이드바 --> 
   <aside class="sidebar sm-only">  <!--is-active-->
     <header class="sidebar-header">
       <h1 class="logo">
@@ -276,6 +306,31 @@
       </div>
     </div>
   </aside>
+
+  <nav class="lnb">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="visually-hidden">스토어 메뉴</h1>
+          <ul class="lnb-list">
+            <li class="lnb-item"><a href="#">스토어홈</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">카테고리</a></li>  <!--is-active-->
+            <li class="lnb-item"><a href="#">신혼가구</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">베스트</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">오늘의딜</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">연휴특가</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">월동준비</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">리퍼마켓</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="/">기획전
+              <i class="ico_new" lang="en" aria-hidden="New"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </nav>
 
 <div class="overlay" aria-hidden></div> <!--is-active-->
 

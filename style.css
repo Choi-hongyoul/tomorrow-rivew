@@ -1526,9 +1526,31 @@ i {
   }
 }
 @media screen and (min-width: 1200px) {
-  .gnb-right .input-group {
+  .gnb-search {
+    position: relative;
     width: 264px;
     margin-right: 24px;
+  }
+  .gnb-search .input-group {
+    width: 100%;
+  }
+  .gnb-search .search-history {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 16px 8px 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E2E7;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+  }
+  .gnb-search .search-history.is-active {
+    display: block;
+  }
+  .gnb-search .search-history-header {
+    padding: 0 8px;
   }
 }
 
