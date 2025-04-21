@@ -3,12 +3,15 @@
 @use '../constants/colors' as *;
 @use '../layouts/grids' as *;
 @use '../mixins/scrollbar' as *;
+@use '../mixins/responsive' as *;
 
 
 
 
 .lnb {
     $lnb-link-padding: 8px;
+    $lnb-height-sm: 40px;
+    $lnb-height-md: 50px;
     $grid-margin: $sm-margin + ($gutter / 2)  ;
 
     @include no-scrollbar;
@@ -18,7 +21,7 @@
 
     &-list {
         border-bottom: 1px solid $border;
-        height: 40px;
+        height:  $lnb-height-sm;
         @include inline-flexbox(start);
         //width: max-content;//자신을 갖을수있는데 최대 넓이 (넓이를 지정하지않고 써야함)
         white-space: nowrap;
@@ -42,7 +45,7 @@
         a {
             @include inline-flexbox;
             @include text-style(13, $dark);
-            height: 40px;
+            height:   $lnb-height-sm;
             padding: 0 $lnb-link-padding;
             font-weight: 700;
             border-bottom: 2px solid transparent; //active 때 높이차이 정렬
@@ -51,5 +54,31 @@
         // .ico_new {
         //     color: $red;
         // }
+    }
+
+    @include responsive(T) {
+        border-bottom: 2px solid transparent;
+        overflow-x: visible;
+        height:  $lnb-height-md;
+
+        &-list {
+            height: auto;
+            padding: 0;
+            margin-left: 0;
+            border-bottom: none;
+
+        }
+        
+
+        &-item{
+            a{
+                @include text-style(14);
+                height:   $lnb-height-md;
+            }
+        }
+    }
+
+    @include responsive(D) {
+        
     }
 }
