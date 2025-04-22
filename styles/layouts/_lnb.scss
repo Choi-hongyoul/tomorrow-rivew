@@ -12,7 +12,7 @@
     $lnb-link-padding: 8px;
     $lnb-height-sm: 40px;
     $lnb-height-md: 50px;
-    $grid-margin: $sm-margin + ($gutter / 2)  ;
+    $grid-margin: $sm-margin + calc($gutter / 2);
 
     @include no-scrollbar;
     overflow-x:auto;
@@ -80,7 +80,7 @@
 
     @include responsive(D) {
         a {
-            @include text-style()
+            // @include text-style()
         }
     }
 } 
