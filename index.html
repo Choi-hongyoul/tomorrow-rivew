@@ -19,7 +19,8 @@
 <body>
   <!--반응형작업시 모바일부터 작업하는걸 추천 -->
 
-  <header class="gnb ">
+<header class="global-header">
+  <div class="gnb ">
     <div class="container">
       <div class="row">
         <div class="col-sm-4 col-md-12 col-lg-12"> <!--col-sm-4 ,col-md-12,col-lg-12  셋다 width100% 나옴 하나 만 적어줘도됨. -->
@@ -146,8 +147,44 @@
         </div> <!--col-sm-4 col-md-12 col-lg-12-->
       </div> <!--row-->
     </div> <!--container-->
-  </header>
+  </div>
+
+  <nav class="lnb">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="visually-hidden">스토어 메뉴</h1>
+          <ul class="lnb-list">
+            <li class="lnb-item is-active"><a href="#">스토어</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">카테고리</a></li>  <!--is-active-->
+            <li class="lnb-item"><a href="#">신혼가구</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">베스트</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">오늘의딜</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">연휴특가</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">월동준비</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="#">리퍼마켓</a></li> <!--is-active-->
+            <li class="lnb-item"><a href="/">기획전
+              <i class="ico_new" lang="en" aria-hidden="New"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
   
+
+<!-- 상품상세페이지 -->
+<main class="product-show">
+
+</main>
+
+
+<footer class="global-footer">
+
+</footer>
 
 
   <!-- 사이드바 --> 
@@ -307,32 +344,7 @@
     </div>
   </aside>
 
-  <nav class="lnb">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h1 class="visually-hidden">스토어 메뉴</h1>
-          <ul class="lnb-list">
-            <li class="lnb-item is-active"><a href="#">스토어</a></li> <!--is-active-->
-            <li class="lnb-item"><a href="#">카테고리</a></li>  <!--is-active-->
-            <li class="lnb-item"><a href="#">신혼가구</a></li> <!--is-active-->
-            <li class="lnb-item"><a href="#">베스트</a></li> <!--is-active-->
-            <li class="lnb-item"><a href="#">오늘의딜</a></li> <!--is-active-->
-            <li class="lnb-item"><a href="#">연휴특가</a></li> <!--is-active-->
-            <li class="lnb-item"><a href="#">월동준비</a></li> <!--is-active-->
-            <li class="lnb-item"><a href="#">리퍼마켓</a></li> <!--is-active-->
-            <li class="lnb-item"><a href="/">기획전
-              <i class="ico_new" lang="en" aria-hidden="New"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </nav>
-
-<div class="overlay" aria-hidden></div> <!--is-active-->
+  <div class="overlay" aria-hidden></div> <!--is-active-->
 
 </body>
 </html>

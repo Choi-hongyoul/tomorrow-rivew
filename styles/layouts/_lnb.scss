@@ -71,7 +71,7 @@
         
 
         &-item{
-            a{
+            a {
                 @include text-style(14);
                 height:   $lnb-height-md;
             }
@@ -79,6 +79,8 @@
     }
 
     @include responsive(D) {
-        
+        a {
+            @include text-style()
+        }
     }
-}
+} 
