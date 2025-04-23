@@ -1992,4 +1992,9 @@ i {
     letter-spacing: -0.001em;
     height: 50px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .lnb-list {
+    height: auto;
+  }
 }/*# sourceMappingURL=main.css.map */

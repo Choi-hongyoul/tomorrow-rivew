@@ -18,7 +18,6 @@
     overflow-x:auto;
 
 
-
     &-list {
         border-bottom: 1px solid $border;
         height:  $lnb-height-sm;
@@ -66,21 +65,21 @@
             padding: 0;
             margin-left: 0;
             border-bottom: none;
-
         }
         
 
         &-item{
             a {
                 @include text-style(14);
-                height:   $lnb-height-md;
+                height: $lnb-height-md;
             }
         }
     }
 
     @include responsive(D) {
-        a {
-            // @include text-style()
+
+        &-list {
+            height: auto;
         }
     }
 } 
