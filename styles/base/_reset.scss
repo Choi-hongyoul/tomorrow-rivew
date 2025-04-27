@@ -188,3 +188,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   } //font를 좀더 부드럽게 처리  이후에 * 로 또 사용 (font smoothing 모질라에서 가져옴)
+
+
+  address {
+    font-style: nomal;
+  }
